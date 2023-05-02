@@ -16,7 +16,7 @@ jobs:
       - run: docker run -e CI=true betasoftcologne/multi-docker npm test
  
       # build production images
-      - run: docker build -t betasoftcologne/multi-client ./
+      - run: docker build -t betasoftcologne/multi-client ./client
       - run: docker build -t betasoftcologne/multi-nginx ./nginx
       - run: docker build -t betasoftcologne/multi-server ./server
       - run: docker build -t betasoftcologne/multi-worker ./worker
